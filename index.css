@@ -1,0 +1,190 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.case {
+  width: 95%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+nav {
+  width: 100%;
+  height: 100px;
+}
+
+.n-main {
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.links {
+  display: flex;
+  gap: 20px;
+  a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 14px;
+  }
+}
+.mobile {
+  display: none;
+}
+
+.icons {
+  display: flex;
+  gap: 20px;
+}
+
+@media (max-width: 768px) {
+  .links {
+    display: none;
+  }
+  .mobile {
+    display: block;
+    svg {
+      color: #000;
+    }
+  }
+}
+.h-main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 0;
+  gap: 30px;
+}
+.h-right img {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 20px;
+}
+
+.h-left {
+  p{
+    padding: 20px 0;
+  }
+  button {
+    color: rgb(255, 255, 255);
+    background-color: #247cc0;
+    border-radius: 10px;
+    width: 151px;
+    height: 52px;
+    border: none;
+  }
+}
+@media (max-width: 1149px) {
+  .h-main {
+    flex-direction: column-reverse;
+  }
+  .h-left {
+    text-align: center;
+  }
+}
+
+.s-main{
+  display: flex;
+  gap: 40px; 
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.a-left, .a-right{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.a-main{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  padding: 60px 0;
+}
+@media (max-width: 923px) {
+  .a-main {
+    flex-direction: column-reverse;
+  }
+  .a-left {
+    text-align: center;
+  }
+}
+footer{
+  display: flex;
+  justify-content: center;
+}
+.f-main{
+  text-align: center;
+  
+}
+b{
+  display: flex;
+ 
+}
+
+
+.card {
+  width: 360px;
+  height: 450px;
+  box-shadow: 0px 10px 20px #c0c0c0;
+  text-align: center;
+  gap: 30px;
+  b{
+    display: block;
+    text-align: center;
+  }
+  h2{
+    display: block;
+    text-align: center;
+  }
+
+}
+h2{
+  display: flex;
+ 
+}
+.f-main{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+
+  }
+  a{
+    display: flex;
+    grid-template-columns: repeat(4, 1fr);
+    border: none;
+
+  }
+  .case{
+    h1{
+      text-align: center;
+    }
+  }
+
+   
+   
+  .row {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin: 50px 0;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px;
+
+
+    height: auto;
+    b {
+      margin-top: auto;
+    }
+  }
